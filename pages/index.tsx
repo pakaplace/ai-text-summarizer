@@ -171,7 +171,6 @@ export async function getServerSideProps({ req, res }) {
       props: { data: allResponsesData },
     };
   } catch (e) {
-    console.log("~~", e.message);
     return { props: {} };
   }
 }
