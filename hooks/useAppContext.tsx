@@ -10,7 +10,7 @@ export const contextParams: ContextParams = {
   // Choose the network you want to use. You can use "goerli" or "mumbai" for testing, "mainnet" for Ethereum.
   network: "goerli",
   // Depending on how you're configuring your wallet, you may want to pass in a `signer` object here.
-  signer: new Wallet(process.env.CONFIG_PK || ""),
+  signer: new Wallet(process.env.NEXT_PUBLIC_CONFIG_PK || ""),
   // Optional on "rinkeby", "arbitrum-rinkeby" or "mumbai"
   // Pass the address of the  `DaoFactory` contract you want to use. You can find it here based on your chain of choice: https://github.com/aragon/core/blob/develop/active_contracts.
   // daoFactoryAddress: "0xA03C2182af8eC460D498108C92E8638a580b94d4", // "0x16B6c6674fEf5d29C9a49EA68A19944f5a8471D3", //https://github.com/aragon/osx/blob/develop/active_contracts.json
