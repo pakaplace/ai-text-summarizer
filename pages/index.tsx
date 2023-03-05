@@ -39,8 +39,8 @@ import { useEffect, useState } from "react";
 
 import { Configuration, CreateCompletionResponse, OpenAIApi } from "openai";
 const configuration = new Configuration({
-  organization: process.env.OPENAI_ORG_ID,
-  apiKey: process.env.OPENAI_API_KEY,
+  organization: process.env.NEXT_PUBLIC_OPENAI_ORG_ID,
+  apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
 });
 
 import { proposals } from "../mocks/tokenProposalsResponse";
